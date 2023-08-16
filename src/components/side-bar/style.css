@@ -1,0 +1,120 @@
+.main__nav.nav--side-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--white-2);
+    width: 75px;
+    position: fixed;
+    inset: 20px 0px;
+    border-radius: 10px;
+    margin: 0px 0px 0px 20px;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.main__nav.nav--side-bar:hover {
+    width: 185px;
+}
+
+.side-bar__div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    transition: 0.2s;
+}
+
+.side-bar__icon {
+    position: relative;
+    color: var(--black);
+    text-decoration: none;
+    margin: 10px 0px;
+    width: 100%;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    visibility: hidden;
+    font-weight: 500;
+    transition: 0.0s;
+    transition-delay: 0s;
+}
+
+.side-bar__icon ion-icon,
+.side-bar__icon i {
+    font-size: 28px;
+    color: var(--black);
+    visibility: visible;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    transition: 0.2s;
+}
+
+.main__nav.nav--side-bar:hover .side-bar__icon {
+    visibility: visible;
+    transition-delay: 0.15s;
+}
+
+.main__nav.nav--side-bar:hover .side-bar__icon ion-icon {
+    position: relative;
+    width: 60px;
+    transition-delay: 0.05s;
+}
+
+.main__nav.nav--side-bar:hover .side-bar__icon i {
+    position: relative;
+    width: 60px;
+    transition-delay: 0.05s;
+}
+
+.side-bar__icon:hover {
+    color: var(--blue);
+}
+
+.side-bar__icon:hover ion-icon,
+.side-bar__icon:hover i {
+    color: var(--blue);
+}
+
+.side-bar__icon.btn {
+    background: transparent;
+    border: 0px;
+    outline-width: 0px;
+    padding: 0px;
+}
+
+.side-bar__icon.btn:hover {
+    border: 0px;
+    outline-width: 0px;
+    background: transparent;
+}
+
+#sideBarLoading {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #d4d4d4, #d4d4d4, #d4d4d4, #d4d4d4, #808080, #d4d4d4, #d4d4d4, #d4d4d4, #d4d4d4) no-repeat;
+    z-index: 3;
+    background-size: 1500%, 1500%;
+    animation: gradient 1s linear infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}

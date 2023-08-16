@@ -1,0 +1,151 @@
+.main__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  max-width: 400px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form__h2 {
+  font-size: 33px;
+  font-weight: 600;
+}
+
+.form__label {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 5px 0px;
+}
+
+.form__label__div {
+  display: flex;
+  align-items: center;
+  border: solid 1.5px var(--black);
+  padding: 5px 10px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 30px;
+  margin: 0px;
+  transition: 0.2s;
+}
+
+div.form__label__div:has(> input:focus) {
+  border-radius: 0px;
+  border: 0px;
+  border-bottom: solid 1.5px #0068B3;
+  color: #0068B3;
+}
+
+.form__label__div ion-icon,
+i {
+  font-size: 24px;
+  margin-right: 4px;
+}
+
+.form__label__div input {
+  border: 0px;
+  outline-width: 0px;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.form__label__div input:focus {
+  outline-width: 0px;
+}
+
+.form__label__div input::placeholder {
+  opacity: 0.7;
+}
+
+.form__btn {
+  background: var(--black);
+  border: 0px;
+  outline-width: 0px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 30px;
+  margin: 10px 0px 0px 0px;
+  transition: 0.2s;
+}
+
+.form__btn:hover {
+  transform: scale(1.05);
+}
+
+.form__p {
+  color: royalblue;
+  text-decoration: underline;
+  margin: 10px 0px 0px 0px;
+  cursor: pointer;
+}
+
+.form__btn.loading {
+  background: transparent;
+  cursor: wait;
+  width: auto;
+  transform: scale(0.7);
+  transition: 0s;
+  margin: 0px;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  background: #353535;
+  display: block;
+  margin: 20px auto;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotationBack 1s ease-in-out infinite reverse;
+}
+
+.loader::before {
+  content: '';
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  transform: rotate(45deg);
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background: #2e2e2e;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.loader::after {
+  content: '';
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: rgb(0, 0, 0);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
