@@ -1,7 +1,7 @@
 .task-section__add-item {
     border: 0px;
     background: transparent;
-    color: var(--black);
+    color: var(--editItem-color);
     font-size: 35px;
     cursor: pointer;
     position: absolute;

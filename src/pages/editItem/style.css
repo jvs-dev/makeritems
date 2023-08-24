@@ -18,7 +18,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: #fff;
+    background: var(--editItem-background);
+    color: var(--editItem-color);
     width: calc(100% - 120px);
     max-width: 800px;
     height: auto;
@@ -36,6 +37,7 @@
     border: 0px;
     background: transparent;
     outline-width: 0px;
+    color: var(--editItem-color);
 }
 
 .editItem__deleteBtn {
@@ -48,6 +50,7 @@
     background: transparent;
     outline-width: 0px;
     transition: 0.2s;
+    color: var(--editItem-color);
 }
 
 .editItem__deleteBtn:hover {
@@ -112,7 +115,9 @@
 }
 
 .editItem__input {
-    border: solid 2px var(--black);
+    background: transparent;
+    border: solid 2px var(--editItem-color);
+    color: var(--editItem-color);
     border-radius: 10px;
     padding: 0px;
     width: 70px;
@@ -129,7 +134,7 @@
 .editItem__input:focus {
     outline-width: 0px;
     border: solid 2px transparent;
-    border-bottom: solid 2px var(--black);
+    border-bottom: solid 2px var(--editItem-color);
     border-radius: 0px;
 }
 

@@ -4,10 +4,14 @@
     --white-2: #e9e9e9;
     --blue: #0068B3;
     --title-blue: #0B5396;
+    --editItem-background: #fff;
+    --editItem-color: #1b1b1b;
 }
 
 .dark {
     --title-blue: transparent;
+    --editItem-background: rgb(40 41 43);
+    --editItem-color: #fff;
 }
 
 body {

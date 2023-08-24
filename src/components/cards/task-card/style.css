@@ -3,7 +3,7 @@
     align-items: center;
     width: 100%;
     padding: 20px 0px;
-    border-bottom: solid 1px var(--black);
+    border-bottom: solid 1px var(--editItem-color);
 }
 
 .taskCard__container {
@@ -20,7 +20,7 @@
 
 .path {
     fill: none;
-    stroke: var(--black);
+    stroke: var(--editItem-color);
     stroke-width: 6;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -51,6 +51,7 @@
     font-size: 30px;
     cursor: pointer;
     transition: 0.2s;
+    color: var(--editItem-color);
 }
 .taskCard__delete:hover {
     color: #f00;

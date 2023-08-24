@@ -14,7 +14,8 @@
     opacity: 1;
 }
 .tasks-section {
-    background: var(--white);
+    background: var(--editItem-background);
+    color: var(--editItem-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,7 +39,7 @@
 }
 .tasks-section__close {
     background: transparent;
-    color: var(--black);
+    color: var(--editItem-color);
     cursor: pointer;
     border: 0px;
     outline-width: 0px;
