@@ -5,9 +5,24 @@
     --blue: #0068B3;
     --title-blue: #0B5396;
 }
+
 .dark {
     --title-blue: transparent;
 }
+
 body {
     font-family: 'Inter', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--black);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--white);
+    border-radius: 20px;
 }

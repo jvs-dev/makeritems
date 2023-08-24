@@ -7,7 +7,10 @@
     align-items: center;
     margin: 20px;
     width: 200px;
+    position: relative;
+    overflow: hidden;
 }
+
 .item-card__divImg {
     width: 100%;
     height: 130px;
@@ -16,11 +19,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
+
 .item-card__img {
     max-height: 100%;
     max-width: 100%;
 }
+
 .item-card__name {
     font-family: 'Poppins', sans-serif;
     color: var(--white);
@@ -29,17 +36,20 @@
     margin: 8px 0px 8px 0px;
     text-align: center;
 }
+
 .item-card__quanty {
-     width: 100%;
-     background: #091B31;
-     border-radius: 10px;
-     padding: 10px 0px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     text-align: center;
-     color: var(--white);
+    width: 100%;
+    background: #091B31;
+    border-radius: 10px;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    cursor: pointer;
 }
+
 .item-card__div {
     display: flex;
     align-items: center;
@@ -47,6 +57,7 @@
     width: 100%;
     gap: 20px;
 }
+
 .item-card__btn {
     background: var(--clr);
     border: 0px;
@@ -59,6 +70,29 @@
     cursor: pointer;
     transition: 0.2s;
 }
+
 .item-card__btn:hover {
     transform: scale(1.05);
+}
+
+.item-card__loading {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: linear-gradient(45deg, #d4d4d4, #d4d4d4, #d4d4d4, #d4d4d4, #808080, #d4d4d4, #d4d4d4, #d4d4d4, #d4d4d4) no-repeat;
+    z-index: 3;
+    background-size: 1500%, 1500%;
+    animation: gradient 1s linear infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
 }

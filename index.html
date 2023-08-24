@@ -24,11 +24,41 @@
   <link rel="stylesheet" href="src/components/cards/task-card/style.css">
   <link rel="stylesheet" href="src/components/buttons/add-task/style.css">
   <link rel="stylesheet" href="src/components/cards/item-card/style.css">
+  <link rel="stylesheet" href="src/components/forms/login/style.css">
+  <link rel="stylesheet" href="src/pages/editItem/style.css">
+  <link rel="stylesheet" href="src/components/loaders/adding-item/style.css">
   <title>Home - MAKERITEMS</title>
 </head>
 
 <body>
   <main id="main">
+    <div class="addingItem">
+      <div class="addingItem__loader">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+      </div>
+      <p class="addingItem__p">Excluindo item...</p>
+    </div>
+    <div class="editItem__background" id="editItemBackground">
+      <section class="editItem__section">
+        <button class="editItem__closeBtn" id="editItemClose"><ion-icon name="close-outline"></ion-icon></button>
+        <button class="editItem__deleteBtn" id="editItemDelete"><ion-icon name="trash-outline"></ion-icon></button>
+        <div class="editItem__imgDiv">
+          <img class="editItem__imgDiv__img" src="" alt="" id="editItemImg">
+        </div>
+        <p class="editItem__name" id="editItemName"></p>
+        <div class="editItem__inputDiv">
+          <button class="editItem__inputBtn remove" id="editItemRemove">-</button>
+          <label for="editItemInput" class="editItem__label">
+            Em estoque:
+            <input type="number" name="editItemInput" class="editItem__input" id="editItemInput">
+          </label>
+          <button class="editItem__inputBtn add" id="editItemAdd">+</button>
+        </div>
+        <button class="editItem__ConfirmBtn" id="confirmEditItem">Confirmar</button>
+      </section>
+    </div>
     <div class="tasks-background" id="taskBackground">
       <section class="tasks-section">
         <button type="button" class="tasks-section__close" id="closeTasks"><ion-icon

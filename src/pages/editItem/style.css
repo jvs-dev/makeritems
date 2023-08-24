@@ -1,0 +1,174 @@
+.editItem__background {
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.63);
+    backdrop-filter: blur(2.5px);
+    z-index: 5;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.editItem__section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    width: calc(100% - 120px);
+    max-width: 800px;
+    height: auto;
+    padding: 40px 0px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.editItem__closeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px 20px 0px 0px;
+    font-size: 40px;
+    border: 0px;
+    background: transparent;
+    outline-width: 0px;
+}
+
+.editItem__deleteBtn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0px 0px 10px 20px;
+    font-size: 30px;
+    border: 0px;
+    background: transparent;
+    outline-width: 0px;
+    transition: 0.2s;
+}
+
+.editItem__deleteBtn:hover {
+    color: #f00;
+}
+
+.editItem__imgDiv {
+    background: #fff;
+    box-shadow: 0px 2px 10px #000000ab;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.editItem__imgDiv__img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.editItem__name {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px 40px;
+    text-align: center;
+}
+
+.editItem__inputDiv {
+    display: flex;
+    align-items: flex-end;
+    margin: 20px 0px;
+}
+
+.editItem__inputBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    background: var(--black);
+    color: var(--white);
+    border: 0px;
+    outline-width: 0px;
+    padding: 0px;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+}
+
+.editItem__label {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 0px 5px;
+    font-weight: 500;
+}
+
+.editItem__input {
+    border: solid 2px var(--black);
+    border-radius: 10px;
+    padding: 0px;
+    width: 70px;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.editItem__input:focus {
+    outline-width: 0px;
+    border: solid 2px transparent;
+    border-bottom: solid 2px var(--black);
+    border-radius: 0px;
+}
+
+.editItem__ConfirmBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 28px;
+    border-radius: 20px;
+    background: var(--black);
+    color: var(--white);
+    cursor: pointer;
+    border: 0px;
+    font-size: 18px;
+    margin: 5px 0px 0px 0px;
+}
+
+.editItem__ConfirmBtn.loading {
+    padding: 0px;
+    background: transparent;
+    cursor: wait;
+    transform: scale(0.7);
+}
+
+.addingItem {
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: #000000e5;
+    opacity: 0;
+    transition: 0.2s;
+    z-index: 15;
+}
+.addingItem .addingItem__p {
+    color: var(--white);
+    margin-top: 30px;
+}
