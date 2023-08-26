@@ -91,6 +91,8 @@ showTasks.onclick = function () {
 }
 
 closeTasks.onclick = function () {
+    let body = document.querySelector("body")
+    body.style.overflowY="auto"
     taskBackground.classList.remove("active")
     setTimeout(() => {
         taskBackground.style.display = "none"

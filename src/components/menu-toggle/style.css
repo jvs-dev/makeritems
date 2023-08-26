@@ -1,0 +1,79 @@
+.main__menuToggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    background: transparent;
+    color: var(--white);
+    border: 0px;
+    outline-width: 0px;
+    margin: 20px 0px 0px 20px;
+    font-size: 40px;
+    cursor: pointer;
+}
+.main__navSection {
+    display: none;
+    opacity: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+    background: var(--editItem-background);
+    color: var(--editItem-color);
+    z-index: 7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: 0.2s;
+}
+.main__menuClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    background: transparent;
+    color: var(--editItem-color);
+    border: 0px;
+    outline-width: 0px;
+    margin: 20px 20px 0px 0px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.navSection__btn {
+    display: flex;
+    align-items: center;
+    color: var(--editItem-color);
+    background: transparent;
+    text-decoration: none;
+    padding: 5px 35px;
+    border-radius: 180px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.2s;
+    border: 0px;
+    outline-width: 0px;
+}
+.navSection__btn i, .navSection__btn ion-icon {
+    margin-right: 10px;
+    font-size: 23px;
+}
+
+.navSection__btn:hover {
+    color: var(--editItem-background);
+    background: var(--editItem-color);
+}
+
+@media only screen and (max-width: 600px) {
+    .main__menuToggle {
+        display: flex;
+    }
+}

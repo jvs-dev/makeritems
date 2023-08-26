@@ -118,3 +118,12 @@
         background-position: 100% 50%;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .main__nav.nav--side-bar {
+      display: none;
+    }
+    .main__cardsSection {
+        padding: 0px 0px 20px 0px;
+    }
+  }

@@ -97,12 +97,14 @@ div.sign-in__div:has(> input:focus) {
     margin: 15px 0px 0px 0px;
     transition: 0.2s;
 }
+
 #alertTxt {
     font-size: 16px;
     font-weight: 500;
     color: #f00;
     margin: 0px;
 }
+
 .copyData {
     position: absolute;
     top: 0;
@@ -133,6 +135,7 @@ div.sign-in__div:has(> input:focus) {
     margin: 20px 20px 0px 0px;
     color: var(--editItem-color);
 }
+
 #closeCopyData:hover {
     transform: scale(1.05);
     outline-width: 0px;
@@ -146,8 +149,25 @@ div.sign-in__div:has(> input:focus) {
     background: var(--editItem-color);
     color: var(--editItem-background);
 }
+
 .copyData__h2 {
     margin-bottom: 20px;
     font-weight: 600;
     font-size: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .main__form-section {
+        padding: 40px 0px 20px 0px;
+    }
+
+    .main__form--sign-in {
+        width: 90%;
+        padding: 20px 0px;
+    }
+
+    .form__h2 {
+        font-size: 22px;
+        font-weight: 600;
+    }
 }

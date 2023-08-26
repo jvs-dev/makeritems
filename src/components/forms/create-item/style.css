@@ -61,3 +61,12 @@
     border-radius: 10px;
     width: 100%;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .main__addItem-background {
+        flex-direction: column-reverse;
+        background: var(--addItem-background);
+    }
+    
+}

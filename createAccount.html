@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="src/components/cards/task-card/style.css">
     <link rel="stylesheet" href="src/components/buttons/add-task/style.css">
     <link rel="stylesheet" href="src/pages/createAccount/style.css">
+    <link rel="stylesheet" href="src/components/menu-toggle/style.css">
     <title>Criar - MAKERITEMS</title>
 </head>
 
@@ -50,17 +51,28 @@
             <input type="checkbox" class="main__darkLight" id="darkLight" checked>
             <div class="fontTitle">Criar conta</div>
         </header>
+        <button class="main__menuToggle" id="menuToggle"><ion-icon name="menu-outline"></ion-icon></button>
+        <section class="main__navSection" id="navSection">
+            <button class="main__menuClose" id="closeMenu"><ion-icon name="close-outline"></ion-icon></button>
+            <a href="index.html" class="navSection__btn"><i class="bi bi-box-seam"></i>Estoque</a>
+            <button class="navSection__btn" id="mobileShowTasks"><i class="bi bi-clipboard-check"></i>Tarefas</button>
+            <a href="addItem.html" class="navSection__btn"><ion-icon name="add-circle-outline"></ion-icon>Criar item</a>
+            <a href="createAccount.html" class="navSection__btn"><ion-icon name="person-add-outline"></ion-icon>Criar
+                conta</a>
+            <button class="navSection__btn" id="mobileSignOutBtn"><i class="bi bi-box-arrow-left"></i>Sair</button>
+        </section>
         <nav class="main__nav nav--side-bar">
             <div id="sideBarLoading"></div>
             <div class="side-bar__div">
-              <a href="index.html" class="side-bar__icon"><i class="bi bi-box-seam"></i>Estoque</a>
-              <button class="side-bar__icon btn" id="showTasks"><i class="bi bi-clipboard-check"></i>Tarefas</button>
-              <a href="addItem.html" class="side-bar__icon"><ion-icon name="add-circle-outline"></ion-icon>Criar item</a>
-              <a href="createAccount.html" class="side-bar__icon"><ion-icon name="person-add-outline"></ion-icon>Criar
-                conta</a>
+                <a href="index.html" class="side-bar__icon"><i class="bi bi-box-seam"></i>Estoque</a>
+                <button class="side-bar__icon btn" id="showTasks"><i class="bi bi-clipboard-check"></i>Tarefas</button>
+                <a href="addItem.html" class="side-bar__icon"><ion-icon name="add-circle-outline"></ion-icon>Criar
+                    item</a>
+                <a href="createAccount.html" class="side-bar__icon"><ion-icon name="person-add-outline"></ion-icon>Criar
+                    conta</a>
             </div>
             <button class="side-bar__icon btn" id="signOutBtn"><i class="bi bi-box-arrow-left"></i>Sair</button>
-          </nav>
+        </nav>
         <section class="main__form-section">
             <form action="" class="main__form--sign-in">
                 <article class="copyData" id="copyDataSection">
@@ -81,7 +93,8 @@
                     Senha
                     <div class="sign-in__div">
                         <i class="bi bi-lock sign-in__icon"></i>
-                        <input type="password" name="" id="password" class="sign-in__input" placeholder="Digite sua senha">
+                        <input type="password" name="" id="password" class="sign-in__input"
+                            placeholder="Digite sua senha">
                         <ion-icon name="eye-outline" class="sign-in__icon"></ion-icon>
                     </div>
                 </label>
@@ -89,7 +102,8 @@
                     Confirmar senha
                     <div class="sign-in__div">
                         <i class="bi bi-lock sign-in__icon"></i>
-                        <input type="password" name="" id="confirmPassword" class="sign-in__input" placeholder="Confirme sua senha">
+                        <input type="password" name="" id="confirmPassword" class="sign-in__input"
+                            placeholder="Confirme sua senha">
                         <ion-icon name="eye-outline" class="sign-in__icon"></ion-icon>
                     </div>
                 </label>
@@ -109,7 +123,8 @@
     <script type="module" src="src/components/buttons/add-task/script.js"></script>
     <script type="module" src="src/pages/createAccount/script.js"></script>
     <script type="module" src="src/script/verify-login.js"></script>
-  <script type="module" src="src/components/side-bar/script.js"></script>
+    <script type="module" src="src/components/side-bar/script.js"></script>
+    <script type="module" src="src/components/menu-toggle/script.js"></script>
 </body>
 
 </html>

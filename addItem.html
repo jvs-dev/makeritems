@@ -27,6 +27,7 @@
   <link rel="stylesheet" href="src/pages/tasks/style.css">
   <link rel="stylesheet" href="src/components/buttons/add-task/style.css">
   <link rel="stylesheet" href="src/components/loaders/adding-item/style.css">
+  <link rel="stylesheet" href="src/components/menu-toggle/style.css">
   <title>Adicionar - MAKERITEMS</title>
 </head>
 
@@ -59,6 +60,15 @@
       <input type="checkbox" class="main__darkLight" id="darkLight" checked>
       <div class="fontTitle">Adição de itens</div>
     </header>
+    <button class="main__menuToggle" id="menuToggle"><ion-icon name="menu-outline"></ion-icon></button>
+    <section class="main__navSection" id="navSection">
+      <button class="main__menuClose" id="closeMenu"><ion-icon name="close-outline"></ion-icon></button>
+      <a href="index.html" class="navSection__btn"><i class="bi bi-box-seam"></i>Estoque</a>
+      <button class="navSection__btn" id="mobileShowTasks"><i class="bi bi-clipboard-check"></i>Tarefas</button>
+      <a href="addItem.html" class="navSection__btn"><ion-icon name="add-circle-outline"></ion-icon>Criar item</a>
+      <a href="createAccount.html" class="navSection__btn"><ion-icon name="person-add-outline"></ion-icon>Criar conta</a>
+      <button class="navSection__btn" id="mobileSignOutBtn"><i class="bi bi-box-arrow-left"></i>Sair</button>
+    </section>
     <nav class="main__nav nav--side-bar">
       <div id="sideBarLoading"></div>
       <div class="side-bar__div">
@@ -105,6 +115,7 @@
   <script type="module" src="src/components/buttons/add-task/script.js"></script>
   <script type="module" src="src/script/verify-login.js"></script>
   <script type="module" src="src/components/side-bar/script.js"></script>
+  <script type="module" src="src/components/menu-toggle/script.js"></script>
 </body>
 
 </html>

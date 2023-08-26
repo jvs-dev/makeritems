@@ -149,3 +149,13 @@ i {
     transform: rotate(-360deg);
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .main__form {
+    width: 100vw;
+    padding: 0px 20px;
+  }
+  #alertTxt {
+    text-align: center;
+  }
+}

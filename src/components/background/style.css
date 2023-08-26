@@ -2,7 +2,7 @@
     background: radial-gradient(ellipse at left top, #001522 73.26%, #002336 73.26%, #002a42 81.47%, #0e354c 81.49%, #154f70 91.66%, #336b8c 91.67%, #4087b0 100%);
 }
 
-.background{
+.background {
     z-index: -1;
     position: fixed;
     background-size: cover;
@@ -20,4 +20,11 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .main__header {
+        height: auto;
+        padding-top: 20px;
+    }
 }

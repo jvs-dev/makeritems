@@ -6,12 +6,14 @@
     --title-blue: #0B5396;
     --editItem-background: #fff;
     --editItem-color: #1b1b1b;
+    --addItem-background: #0B5396;
 }
 
 .dark {
     --title-blue: transparent;
     --editItem-background: rgb(40 41 43);
     --editItem-color: #fff;
+    --addItem-background: transparent;
 }
 
 body {

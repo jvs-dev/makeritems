@@ -69,7 +69,7 @@ async function loadItems() {
           loadingImgCard.style.display = "none"
         }, 1000);
         removeBtn.onclick = () => {
-          if (doc.data().itemQuanty > 0) {
+          if (Number(p.textContent.replace("TOTAL: ", "").replace(" unid.", "")) > 0) {
             removeItem(doc.id, p, 1)
           }
         }
@@ -89,7 +89,7 @@ async function loadItems() {
 async function removeItem(id, p, value) {
   let washingtonRef = doc(db, "items", `${id}`);
   await updateDoc(washingtonRef, {
-    itemQuanty: increment(-value)
+    itemQuanty: Number(p.textContent.replace("TOTAL: ", "").replace(" unid.", "")) - 1
   });
   let docRef = doc(db, "items", `${id}`);
   let docSnap = await getDoc(docRef);
@@ -101,7 +101,7 @@ async function removeItem(id, p, value) {
 async function addItem(id, p, value) {
   let washingtonRef = doc(db, "items", `${id}`);
   await updateDoc(washingtonRef, {
-    itemQuanty: increment(+value)
+    itemQuanty: Number(p.textContent.replace("TOTAL: ", "").replace(" unid.", "")) + 1
   });
   let docRef = doc(db, "items", `${id}`);
   let docSnap = await getDoc(docRef);
